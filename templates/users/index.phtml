@@ -1,0 +1,14 @@
+<table>
+<form action="/users" method="get">
+  <input type="search" name="term" />
+  <input type="submit" value="Search" />
+</form>
+  <?php foreach ($users as $user): ?>
+    <tr>
+      <td>
+          <?= $user?>
+      </td>
+    </tr>
+  <?php endforeach ?>
+  
+</table>

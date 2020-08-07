@@ -1,0 +1,30 @@
+<!-- templates/users/new.phtml -->
+
+<form action="/users" method="post">
+  <div>
+    <label>
+        Имя
+      <input type="text" name="user[nickname]">
+    </label>
+  </div>
+  <?php if (isset($errors)): ?>
+            <div><?= $errors['name'] ?></div>
+        <?php endif ?>
+  <div>
+    <label>
+      Email
+      <input type="email" required name="user[email]">
+    </label>
+    </div>
+  <div>
+  <input type="submit" value="Create">
+</form>
+<form action="/users" method="post">
+    <input type="hidden" name="_METHOD" value="DELETE">
+    <input type="submit" value="Clean">
+</form>
+<table>
+<?php print_r($users)?>
+<?php print_r($id)?>
+
+</table>
