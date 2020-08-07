@@ -12,6 +12,11 @@
         "php-di/php-di": "^6.1",
         "slim/twig-view": "^3.0",
         "laravel/installer": "^3.2",
-        "slim/flash": "^0.4.0"
+        "slim/flash": "^0.4.0",
+        "tightenco/collect": "^7.6",
+        "symfony/apache-pack": "^1.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^173.0"
     }
 }
